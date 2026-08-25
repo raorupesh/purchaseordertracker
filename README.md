@@ -82,6 +82,9 @@ Paste the output as the value of `SESSION_SECRET` in `.env.local`. Notes:
   writes here aren't safe.
 - **Single demo user:** there's one seeded account rather than a signup flow the brief
   didn't ask for user management, and it wasn't the point of the exercise.
+- **Authentication:** Reason for authentication is that I would not like any application to be unsafe under any circumstances, so in case if I develop any application in future security will remain my priority.
+- **Export Data:** Although data is is visible in various formats, I have given this functionality as to, so that the user can sahre the details of Purchase Order to any person in organization who wishes to present it in a important meetings.
+- **TimeStamp and History:** Reason for this is to see when a particular order has been shipped, or received or Re-opened and on which days. Timestamp is very crucial in organisations working under such domains.
 
 ## Time spent
 
