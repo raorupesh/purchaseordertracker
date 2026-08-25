@@ -1,0 +1,593 @@
+[
+  {
+    "poNumber": "TX9K2QP",
+    "refMasterPO": "TX9H1LM",
+    "buyer": "610 JORDAN MILLER",
+    "shipTerms": "FOB Ningbo, CHN",
+    "shipDate": "2026-05-02",
+    "createdDate": "2026-03-14",
+    "vendor": "Harbor Point Trading Ltd\nC/O Meridian Sourcing Co Inc\n410 Commerce Ave\nEdison, NJ 08837",
+    "shipTo": "331 Distribution/Northeast\nC/O Swiftline Express\n1450 Crossroads Blvd\nEdison, NJ 08817",
+    "billTo": "331 Meridian Sourcing Co. Inc.\nC/O Northstar Retail Group – Dept Ops\nPO Box 4021\nEdison, NJ 08837",
+    "brand": "Nordpeak",
+    "status": "received",
+    "totalCost": 447455.12,
+    "lineItems": [
+      {
+        "dept": "210",
+        "sku": "71097188",
+        "upc": "0091120032129",
+        "vendorPartNum": "04212",
+        "description": "NORDPEAK ASHER T CMFST GRY",
+        "retail": 149.99,
+        "cost": 49.4,
+        "extCost": 6718.4,
+        "ctns": 68,
+        "cspk": 2,
+        "extQty": 136,
+        "cube": 0.0991,
+        "kilograms": 7.72
+      },
+      {
+        "dept": "210",
+        "sku": "71097195",
+        "upc": "0091120032136",
+        "vendorPartNum": "04213",
+        "description": "NORDPEAK ASHER FQ CMFST GRY",
+        "retail": 179.99,
+        "cost": 61.6,
+        "extCost": 82913.6,
+        "ctns": 673,
+        "cspk": 2,
+        "extQty": 1346,
+        "cube": 0.1349,
+        "kilograms": 9.96
+      },
+      {
+        "dept": "210",
+        "sku": "71097201",
+        "upc": "0091120032143",
+        "vendorPartNum": "04214",
+        "description": "NORDPEAK ASHER K CMFST GRY",
+        "retail": 199.99,
+        "cost": 70.3,
+        "extCost": 80423.2,
+        "ctns": 572,
+        "cspk": 2,
+        "extQty": 1144,
+        "cube": 0.1549,
+        "kilograms": 12.23
+      },
+      {
+        "dept": "210",
+        "sku": "71097218",
+        "upc": "0091120032150",
+        "vendorPartNum": "04215",
+        "description": "NORDPEAK SIMONE T CMFST BLU",
+        "retail": 149.99,
+        "cost": 49.4,
+        "extCost": 10077.6,
+        "ctns": 102,
+        "cspk": 2,
+        "extQty": 204,
+        "cube": 0.0991,
+        "kilograms": 7.72
+      },
+      {
+        "dept": "210",
+        "sku": "71097225",
+        "upc": "0091120032167",
+        "vendorPartNum": "04216",
+        "description": "NORDPEAK SIMONE FQ CMFST BLU",
+        "retail": 179.99,
+        "cost": 61.6,
+        "extCost": 124801.6,
+        "ctns": 1013,
+        "cspk": 2,
+        "extQty": 2026,
+        "cube": 0.1349,
+        "kilograms": 9.96
+      },
+      {
+        "dept": "210",
+        "sku": "71097232",
+        "upc": "0091120032174",
+        "vendorPartNum": "04217",
+        "description": "NORDPEAK SIMONE K CMFST BLU",
+        "retail": 199.99,
+        "cost": 70.3,
+        "extCost": 120494.2,
+        "ctns": 857,
+        "cspk": 2,
+        "extQty": 1714,
+        "cube": 0.1549,
+        "kilograms": 12.23
+      },
+      {
+        "dept": "210",
+        "sku": "71293238",
+        "upc": "0091120032372",
+        "vendorPartNum": "04237",
+        "description": "NORDPEAK ASHER STRIPE T DVT GRAY",
+        "retail": 129.99,
+        "cost": 44.46,
+        "extCost": 444.6,
+        "ctns": 5,
+        "cspk": 2,
+        "extQty": 10,
+        "cube": 0.0179,
+        "kilograms": 8.69
+      },
+      {
+        "dept": "210",
+        "sku": "71293245",
+        "upc": "0091120032389",
+        "vendorPartNum": "04238",
+        "description": "NORDPEAK ASHER STRIPE F/Q DVT GRAY",
+        "retail": 149.99,
+        "cost": 55.44,
+        "extCost": 4324.32,
+        "ctns": 39,
+        "cspk": 2,
+        "extQty": 78,
+        "cube": 0.0215,
+        "kilograms": 9.66
+      },
+      {
+        "dept": "210",
+        "sku": "71293252",
+        "upc": "0091120032396",
+        "vendorPartNum": "04239",
+        "description": "NORDPEAK ASHER STRIPE K DVT GRAY",
+        "retail": 169.99,
+        "cost": 63.22,
+        "extCost": 4046.08,
+        "ctns": 32,
+        "cspk": 2,
+        "extQty": 64,
+        "cube": 0.0242,
+        "kilograms": 11.33
+      },
+      {
+        "dept": "210",
+        "sku": "71293269",
+        "upc": "0091120032402",
+        "vendorPartNum": "04240",
+        "description": "NORDPEAK SIMONE T DVT BLUE",
+        "retail": 129.99,
+        "cost": 44.46,
+        "extCost": 711.36,
+        "ctns": 8,
+        "cspk": 2,
+        "extQty": 16,
+        "cube": 0.0179,
+        "kilograms": 8.69
+      },
+      {
+        "dept": "210",
+        "sku": "71293276",
+        "upc": "0091120032419",
+        "vendorPartNum": "04241",
+        "description": "NORDPEAK SIMONE F/Q DVT BLUE",
+        "retail": 149.99,
+        "cost": 55.44,
+        "extCost": 6431.04,
+        "ctns": 58,
+        "cspk": 2,
+        "extQty": 116,
+        "cube": 0.0215,
+        "kilograms": 9.66
+      },
+      {
+        "dept": "210",
+        "sku": "71293283",
+        "upc": "0091120032426",
+        "vendorPartNum": "04242",
+        "description": "NORDPEAK SIMONE K DVT BLUE",
+        "retail": 169.99,
+        "cost": 63.22,
+        "extCost": 6069.12,
+        "ctns": 48,
+        "cspk": 2,
+        "extQty": 96,
+        "cube": 0.0242,
+        "kilograms": 11.33
+      }
+    ],
+    "statusHistory": [
+      {
+        "fromStatus": "confirmed",
+        "toStatus": "shipped",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T21:45:05.824Z"
+      },
+      {
+        "fromStatus": "shipped",
+        "toStatus": "received",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T23:48:40.463Z"
+      }
+    ]
+  },
+  {
+    "poNumber": "TX9L3RQ",
+    "refMasterPO": "TX9J2KN",
+    "buyer": "425 SARAH CHEN",
+    "shipTerms": "FOB Hong Kong, HKG",
+    "shipDate": "2026-05-18",
+    "createdDate": "2026-03-20",
+    "vendor": "Sunrise Textile Ltd\nUnit 8, Kowloon Bay Industrial Ctr\nKowloon, Hong Kong",
+    "shipTo": "112 Distribution/Southeast\nC/O Atlantic Freight Services\n800 Harbor Blvd\nSavannah, GA 31401",
+    "billTo": "112 BHF Merchandising LLC\nC/O Finance Dept\nPO Box 1812\nNew York, NY 10018",
+    "brand": "UGG Home",
+    "status": "shipped",
+    "totalCost": 312880,
+    "lineItems": [
+      {
+        "dept": "215",
+        "sku": "82104500",
+        "upc": "0091130041200",
+        "vendorPartNum": "UH-5500",
+        "description": "UGG DUNE T SHERPA COMFORTER SAND",
+        "retail": 249.99,
+        "cost": 88.5,
+        "extCost": 35400,
+        "ctns": 200,
+        "cspk": 2,
+        "extQty": 400,
+        "cube": 0.182,
+        "kilograms": 14.5
+      },
+      {
+        "dept": "215",
+        "sku": "82104517",
+        "upc": "0091130041217",
+        "vendorPartNum": "UH-5501",
+        "description": "UGG DUNE FQ SHERPA COMFORTER SAND",
+        "retail": 299.99,
+        "cost": 106.2,
+        "extCost": 127440,
+        "ctns": 600,
+        "cspk": 2,
+        "extQty": 1200,
+        "cube": 0.221,
+        "kilograms": 17.8
+      },
+      {
+        "dept": "215",
+        "sku": "82104524",
+        "upc": "0091130041224",
+        "vendorPartNum": "UH-5502",
+        "description": "UGG DUNE K SHERPA COMFORTER SAND",
+        "retail": 349.99,
+        "cost": 125,
+        "extCost": 150040,
+        "ctns": 600,
+        "cspk": 2,
+        "extQty": 1200,
+        "cube": 0.255,
+        "kilograms": 21.2
+      }
+    ],
+    "statusHistory": [
+      {
+        "fromStatus": "received",
+        "toStatus": "pending",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T21:47:17.998Z"
+      },
+      {
+        "fromStatus": "pending",
+        "toStatus": "confirmed",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T21:47:26.873Z"
+      },
+      {
+        "fromStatus": "confirmed",
+        "toStatus": "shipped",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T00:18:54.827Z"
+      }
+    ]
+  },
+  {
+    "poNumber": "TX9M4SP",
+    "refMasterPO": "TX9K3LO",
+    "buyer": "610 JORDAN MILLER",
+    "shipTerms": "FOB Shanghai, CHN",
+    "shipDate": "2026-04-28",
+    "createdDate": "2026-03-05",
+    "vendor": "Blue Ridge Mills Ltd\n88 Textile Rd, Hangzhou Export Zone\nHangzhou, Zhejiang 310000",
+    "shipTo": "220 Distribution/Midwest\nC/O Heartland Logistics\n1200 Industrial Pkwy\nChicago, IL 60601",
+    "billTo": "220 BHF Merchandising LLC\nC/O Finance Dept\nPO Box 1812\nNew York, NY 10018",
+    "brand": "Pendleton Heritage",
+    "status": "pending",
+    "totalCost": 198640,
+    "lineItems": [
+      {
+        "dept": "210",
+        "sku": "63021100",
+        "upc": "0034100021100",
+        "vendorPartNum": "PH-1100",
+        "description": "PENDLETON CRATER LAKE T WVN BLANKET",
+        "retail": 189.99,
+        "cost": 65.2,
+        "extCost": 39120,
+        "ctns": 300,
+        "cspk": 2,
+        "extQty": 600,
+        "cube": 0.145,
+        "kilograms": 11.8
+      },
+      {
+        "dept": "210",
+        "sku": "63021117",
+        "upc": "0034100021117",
+        "vendorPartNum": "PH-1101",
+        "description": "PENDLETON CRATER LAKE FQ WVN BLANKET",
+        "retail": 229.99,
+        "cost": 79.8,
+        "extCost": 95760,
+        "ctns": 600,
+        "cspk": 2,
+        "extQty": 1200,
+        "cube": 0.178,
+        "kilograms": 14.6
+      },
+      {
+        "dept": "210",
+        "sku": "63021124",
+        "upc": "0034100021124",
+        "vendorPartNum": "PH-1102",
+        "description": "PENDLETON CRATER LAKE K WVN BLANKET",
+        "retail": 269.99,
+        "cost": 95.3,
+        "extCost": 63760,
+        "ctns": 334,
+        "cspk": 2,
+        "extQty": 668,
+        "cube": 0.201,
+        "kilograms": 18.2
+      }
+    ],
+    "statusHistory": [
+      {
+        "fromStatus": "received",
+        "toStatus": "pending",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T21:47:24.406Z"
+      }
+    ]
+  },
+  {
+    "poNumber": "TX9N5TU",
+    "refMasterPO": "TX9L4MP",
+    "buyer": "388 PRIYA MEHTA",
+    "shipTerms": "FOB Mumbai, IND",
+    "shipDate": "2026-04-15",
+    "createdDate": "2026-02-28",
+    "vendor": "Coastal Fabric Exports Pvt Ltd\nPlot 44, Export Processing Zone\nNew Delhi 110045",
+    "shipTo": "450 Distribution/West\nC/O Pacific Cargo Partners\n300 Gateway Blvd\nLos Angeles, CA 90001",
+    "billTo": "450 BHF Merchandising LLC\nC/O Finance Dept\nPO Box 1812\nNew York, NY 10018",
+    "brand": "Laura Ashley",
+    "status": "received",
+    "totalCost": 89320,
+    "lineItems": [
+      {
+        "dept": "212",
+        "sku": "55340200",
+        "upc": "0078200340200",
+        "vendorPartNum": "LA-2200",
+        "description": "LAURA ASHLEY AMELIE T SHEET SET BLUSH",
+        "retail": 89.99,
+        "cost": 28.4,
+        "extCost": 28400,
+        "ctns": 500,
+        "cspk": 2,
+        "extQty": 1000,
+        "cube": 0.088,
+        "kilograms": 6.4
+      },
+      {
+        "dept": "212",
+        "sku": "55340217",
+        "upc": "0078200340217",
+        "vendorPartNum": "LA-2201",
+        "description": "LAURA ASHLEY AMELIE FQ SHEET SET BLUSH",
+        "retail": 109.99,
+        "cost": 38.2,
+        "extCost": 38200,
+        "ctns": 500,
+        "cspk": 2,
+        "extQty": 1000,
+        "cube": 0.11,
+        "kilograms": 8.1
+      },
+      {
+        "dept": "212",
+        "sku": "55340224",
+        "upc": "0078200340224",
+        "vendorPartNum": "LA-2202",
+        "description": "LAURA ASHLEY AMELIE K SHEET SET BLUSH",
+        "retail": 129.99,
+        "cost": 45.6,
+        "extCost": 22720,
+        "ctns": 250,
+        "cspk": 2,
+        "extQty": 500,
+        "cube": 0.129,
+        "kilograms": 9.8
+      }
+    ],
+    "statusHistory": [
+      {
+        "fromStatus": "confirmed",
+        "toStatus": "shipped",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T21:47:20.660Z"
+      },
+      {
+        "fromStatus": "shipped",
+        "toStatus": "received",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T23:48:44.320Z"
+      }
+    ]
+  },
+  {
+    "poNumber": "TX9P6VW",
+    "refMasterPO": "TX9M5NQ",
+    "buyer": "388 PRIYA MEHTA",
+    "shipTerms": "FOB Bengaluru, IND",
+    "shipDate": "2026-06-10",
+    "createdDate": "2026-04-01",
+    "vendor": "Pacific Linen Corp\nSEZ Unit 12, Electronic City\nBengaluru 560100",
+    "shipTo": "331 Distribution/Northeast\nC/O Swiftline Express\n1450 Crossroads Blvd\nEdison, NJ 08817",
+    "billTo": "331 BHF Merchandising LLC\nC/O Finance Dept\nPO Box 1812\nNew York, NY 10018",
+    "brand": "Casual Living",
+    "status": "pending",
+    "totalCost": 54760,
+    "lineItems": [
+      {
+        "dept": "213",
+        "sku": "41880300",
+        "upc": "0056100880300",
+        "vendorPartNum": "CL-3300",
+        "description": "CASUAL LIVING PALM COVE T SHEET TEAL",
+        "retail": 49.99,
+        "cost": 14.2,
+        "extCost": 14200,
+        "ctns": 500,
+        "cspk": 2,
+        "extQty": 1000,
+        "cube": 0.062,
+        "kilograms": 4.8
+      },
+      {
+        "dept": "213",
+        "sku": "41880317",
+        "upc": "0056100880317",
+        "vendorPartNum": "CL-3301",
+        "description": "CASUAL LIVING PALM COVE FQ SHEET TEAL",
+        "retail": 59.99,
+        "cost": 18.4,
+        "extCost": 18400,
+        "ctns": 500,
+        "cspk": 2,
+        "extQty": 1000,
+        "cube": 0.078,
+        "kilograms": 6.2
+      },
+      {
+        "dept": "213",
+        "sku": "41880324",
+        "upc": "0056100880324",
+        "vendorPartNum": "CL-3302",
+        "description": "CASUAL LIVING PALM COVE K SHEET TEAL",
+        "retail": 69.99,
+        "cost": 22.16,
+        "extCost": 22160,
+        "ctns": 500,
+        "cspk": 2,
+        "extQty": 1000,
+        "cube": 0.092,
+        "kilograms": 7.4
+      }
+    ],
+    "statusHistory": [
+      {
+        "fromStatus": "pending",
+        "toStatus": "confirmed",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T21:47:22.084Z"
+      },
+      {
+        "fromStatus": "confirmed",
+        "toStatus": "shipped",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T21:47:28.480Z"
+      },
+      {
+        "fromStatus": "shipped",
+        "toStatus": "received",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T23:48:45.844Z"
+      },
+      {
+        "fromStatus": "received",
+        "toStatus": "pending",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T23:49:56.467Z"
+      }
+    ]
+  },
+  {
+    "poNumber": "TX9Q7XY",
+    "refMasterPO": "TX9N6OR",
+    "buyer": "425 SARAH CHEN",
+    "shipTerms": "FOB Ningbo, CHN",
+    "shipDate": "2026-05-30",
+    "createdDate": "2026-04-08",
+    "vendor": "Eastern Home Goods Co Ltd\nZone B, Ningbo Export District\nNingbo, Zhejiang 315000",
+    "shipTo": "220 Distribution/Midwest\nC/O Heartland Logistics\n1200 Industrial Pkwy\nChicago, IL 60601",
+    "billTo": "220 BHF Merchandising LLC\nC/O Finance Dept\nPO Box 1812\nNew York, NY 10018",
+    "brand": "Nicole Miller Home",
+    "status": "pending",
+    "totalCost": 171360,
+    "lineItems": [
+      {
+        "dept": "211",
+        "sku": "77650400",
+        "upc": "0062300650400",
+        "vendorPartNum": "NM-4400",
+        "description": "NICOLE MILLER GRAPHIC IKAT T CMFST NAVY",
+        "retail": 159.99,
+        "cost": 54.6,
+        "extCost": 54600,
+        "ctns": 500,
+        "cspk": 2,
+        "extQty": 1000,
+        "cube": 0.121,
+        "kilograms": 9.9
+      },
+      {
+        "dept": "211",
+        "sku": "77650417",
+        "upc": "0062300650417",
+        "vendorPartNum": "NM-4401",
+        "description": "NICOLE MILLER GRAPHIC IKAT FQ CMFST NAVY",
+        "retail": 189.99,
+        "cost": 66.38,
+        "extCost": 79656,
+        "ctns": 600,
+        "cspk": 2,
+        "extQty": 1200,
+        "cube": 0.148,
+        "kilograms": 12.3
+      },
+      {
+        "dept": "211",
+        "sku": "77650424",
+        "upc": "0062300650424",
+        "vendorPartNum": "NM-4402",
+        "description": "NICOLE MILLER GRAPHIC IKAT K CMFST NAVY",
+        "retail": 219.99,
+        "cost": 74.22,
+        "extCost": 37110,
+        "ctns": 250,
+        "cspk": 2,
+        "extQty": 500,
+        "cube": 0.168,
+        "kilograms": 14.8
+      }
+    ],
+    "statusHistory": [
+      {
+        "fromStatus": "received",
+        "toStatus": "pending",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-24T21:47:23.212Z"
+      }
+    ]
+  }
+]

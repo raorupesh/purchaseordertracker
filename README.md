@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Purchase Order Tracker
 
-## Getting Started
+A purchase-order tracking app: Sign In, browse purchase orders, get into depth of one PO order using its unique Number, and advance its status. Built with Next.js 15 (App Router), TypeScript, and Tailwind CSS v4.
 
-First, run the development server:
+## Running it
 
 ```bash
+npm install
+cp .env.example .env.local   # fill in SESSION_SECRET (any random string)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). You'll land on `/login` sign in with:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Username:** `jmartinez`
+- **Password:** `NHFDemo2026!`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+(This account is seeded in `data/users.json`, committed for convenience since this is a
+take-home demo, not a real credential.)
 
-## Learn More
+## What's implemented
 
-To learn more about Next.js, take a look at the following resources:
+- **Data + rendering** : `app/(app)/page.tsx` is a server component that reads
+  `data/purchase-orders.json` and renders the full order list, including per-status counts and a total value summary.
+- **Server action**: `actions/updateStatus.ts` (`advanceStatus`) is a `'use server'`
+  action wired to the "Mark Confirmed / Shipped / Received" button on each row. It cycles
+  a PO's status (`pending → confirmed → shipped → received → pending`), appends an entry
+  to that PO's status history (who changed it and when), persists the change back to the
+  JSON file, and calls `revalidatePath` on both the list and that PO's detail page so the
+  UI reflects the change immediately.
+- **Dynamic route**: `app/(app)/po/[poNumber]/page.tsx` shows the full detail view for
+  one PO (buyer/vendor/ship info, line items, totals, status history), or a 404 if the PO
+  number doesn't exist.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Assumptions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Storage:** "Database" is two JSON files under `data/`, read/written directly via
+  `fs`. Fine for a take-home; a real app would use an actual database, since concurrent
+  writes here aren't safe.
+- **Single demo user:** there's one seeded account rather than a signup flow the brief
+  didn't ask for user management, and it wasn't the point of the exercise.
