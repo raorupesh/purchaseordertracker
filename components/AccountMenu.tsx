@@ -35,7 +35,8 @@ export function AccountMenu() {
         onClick={() => setOpen((v) => !v)}
         aria-haspopup="menu"
         aria-expanded={open}
-        className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-slate-200 transition-colors"
+        aria-label="Account menu"
+        className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-slate-200 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-1"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +60,7 @@ export function AccountMenu() {
           <Link
             href="/profile"
             onClick={() => setOpen(false)}
-            className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-slate-50"
+            className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-slate-50 focus:outline-none focus-visible:bg-slate-50"
           >
             Profile
           </Link>
@@ -67,7 +68,7 @@ export function AccountMenu() {
             type="button"
             onClick={handleLogout}
             disabled={isPending}
-            className="w-full text-left px-3.5 py-2 text-sm text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed"
+            className="w-full text-left px-3.5 py-2 text-sm text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed focus:outline-none focus-visible:bg-slate-50"
           >
             {isPending ? 'Logging out…' : 'Logout'}
           </button>

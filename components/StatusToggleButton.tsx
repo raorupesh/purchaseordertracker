@@ -34,6 +34,7 @@ export function StatusToggleButton({ poNumber, currentStatus }: Props) {
         hover:bg-slate-50 hover:border-slate-300 hover:text-slate-800
         disabled:opacity-40 disabled:cursor-not-allowed
         transition-colors shadow-sm
+        focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-1
       "
     >
       {isPending ? (

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getOrderByPoNumber } from '@/lib/order';
 import { StatusBadge } from '@/components/StatusBadge';
+import { ExportPoDetailPdfButton } from '@/components/ExportPoDetailPdfButton';
 import { STATUS_LABELS } from '@/types';
 
 export const dynamic = 'force-dynamic';
@@ -60,7 +61,9 @@ export default async function PODetailPage({ params }: Props) {
             </span>
             <StatusBadge status={po.status} />
           </div>
-          <div className="flex items-center gap-2" />
+          <div className="flex items-center gap-2">
+            <ExportPoDetailPdfButton po={po} />
+          </div>
         </div>
       </div>
 

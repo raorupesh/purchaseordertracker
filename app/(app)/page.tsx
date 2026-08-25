@@ -1,10 +1,11 @@
 // Server component: Data is fetched on the server, no client JS required for the list.
 // The StatusToggleButton is a client island nested inside this server tree.
 // Auth is enforced by middleware.ts, which runs before this page renders.
-import { getAllOrders } from '@/lib/order';
+import { getAllOrders, toOrderSummary } from '@/lib/order';
 import { StatusBadge, STATUS_BOX_STYLES } from '@/components/StatusBadge';
 import { StatusToggleButton } from '@/components/StatusToggleButton';
 import { PoNumberLink } from '@/components/PoNumberLink';
+import { ExportOrdersPdfButton } from '@/components/ExportOrdersPdfButton';
 import { STATUS_LABELS, type POStatus } from '@/types';
 
 // Opt out of static generation so the list always reflects the current JSON state.
@@ -59,79 +60,91 @@ export default async function HomePage() {
         ))}
       </div>
 
-      {/* Total value */}
-      <div className="flex items-center justify-between">
+      {/* Toolbar: total value + export */}
+      <div className="flex items-center justify-between gap-3 flex-wrap">
         <span className="text-xs text-slate-400 font-mono">
           <span className="font-bold text-slate-700">{formatCurrency(totalValue)}</span> total value
+          <span className="mx-2 text-slate-200">·</span>
+          {orders.length} {orders.length === 1 ? 'order' : 'orders'}
         </span>
+        {orders.length > 0 && (
+          <ExportOrdersPdfButton orders={orders.map(toOrderSummary)} />
+        )}
       </div>
 
       {/* Orders table */}
       <div className="bg-white rounded-xl border border-slate-200 overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-slate-100 bg-slate-50/70">
-                {['PO Number', 'Brand', 'Vendor', 'Ship Date', 'Items', 'Total Cost', 'Status', 'Last Updated', 'Actions'].map(
-                  (h) => (
-                    <th
-                      key={h}
-                      className="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wide whitespace-nowrap"
+        {orders.length === 0 ? (
+          <div className="flex flex-col items-center justify-center gap-1 py-16 text-slate-400">
+            <span className="text-sm font-medium text-slate-500">No purchase orders yet</span>
+            <span className="text-xs">New orders will show up here once they&apos;re created.</span>
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-slate-100 bg-slate-50/70">
+                  {['PO Number', 'Brand', 'Vendor', 'Ship Date', 'Items', 'Total Cost', 'Status', 'Last Updated', 'Actions'].map(
+                    (h) => (
+                      <th
+                        key={h}
+                        className="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wide whitespace-nowrap"
+                      >
+                        {h}
+                      </th>
+                    )
+                  )}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-50">
+                {orders.map((po) => {
+                  const lastChange = po.statusHistory[po.statusHistory.length - 1];
+                  return (
+                    <tr
+                      key={po.poNumber}
+                      className="hover:bg-slate-50/50 transition-colors group"
                     >
-                      {h}
-                    </th>
-                  )
-                )}
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-50">
-              {orders.map((po) => {
-                const lastChange = po.statusHistory[po.statusHistory.length - 1];
-                return (
-                  <tr
-                    key={po.poNumber}
-                    className="hover:bg-slate-50/50 transition-colors group"
-                  >
-                    <td className="px-4 py-3 whitespace-nowrap">
-                      <PoNumberLink poNumber={po.poNumber} />
-                    </td>
-                    <td className="px-4 py-3 text-slate-700 font-medium text-xs">
-                      {po.brand}
-                    </td>
-                    <td className="px-4 py-3 text-slate-500 text-xs max-w-[160px] truncate">
-                      {po.vendor.split('\n')[0]}
-                    </td>
-                    <td className="px-4 py-3 font-mono text-xs text-slate-600">
-                      {po.shipDate}
-                    </td>
-                    <td className="px-4 py-3 text-xs text-slate-500 text-center">
-                      {po.lineItems.length}
-                    </td>
-                    <td className="px-4 py-3 font-mono text-xs text-slate-800 text-right">
-                      {formatCurrency(po.totalCost)}
-                    </td>
-                    <td className="px-4 py-3">
-                      <StatusBadge status={po.status} />
-                    </td>
-                    <td className="px-4 py-3 text-xs text-slate-500 whitespace-nowrap">
-                      {lastChange ? (
-                        formatDateTime(lastChange.changedAt)
-                      ) : (
-                        <span className="text-slate-300">—</span>
-                      )}
-                    </td>
-                    <td className="px-4 py-3 text-right">
-                      <StatusToggleButton
-                        poNumber={po.poNumber}
-                        currentStatus={po.status}
-                      />
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+                      <td className="px-4 py-3 whitespace-nowrap">
+                        <PoNumberLink poNumber={po.poNumber} />
+                      </td>
+                      <td className="px-4 py-3 text-slate-700 font-medium text-xs">
+                        {po.brand}
+                      </td>
+                      <td className="px-4 py-3 text-slate-500 text-xs max-w-[160px] truncate">
+                        {po.vendor.split('\n')[0]}
+                      </td>
+                      <td className="px-4 py-3 font-mono text-xs text-slate-600">
+                        {po.shipDate}
+                      </td>
+                      <td className="px-4 py-3 text-xs text-slate-500 text-center">
+                        {po.lineItems.length}
+                      </td>
+                      <td className="px-4 py-3 font-mono text-xs text-slate-800 text-right">
+                        {formatCurrency(po.totalCost)}
+                      </td>
+                      <td className="px-4 py-3">
+                        <StatusBadge status={po.status} />
+                      </td>
+                      <td className="px-4 py-3 text-xs text-slate-500 whitespace-nowrap">
+                        {lastChange ? (
+                          formatDateTime(lastChange.changedAt)
+                        ) : (
+                          <span className="text-slate-300">—</span>
+                        )}
+                      </td>
+                      <td className="px-4 py-3 text-right">
+                        <StatusToggleButton
+                          poNumber={po.poNumber}
+                          currentStatus={po.status}
+                        />
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
     </div>
   );

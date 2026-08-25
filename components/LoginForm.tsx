@@ -53,7 +53,7 @@ export function LoginForm() {
       <button
         type="submit"
         disabled={isPending}
-        className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-md text-base font-medium bg-slate-900 text-white hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+        className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-md text-base font-medium bg-slate-900 text-white hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2"
       >
         {isPending ? (
           <>

@@ -10,7 +10,7 @@
     "shipTo": "331 Distribution/Northeast\nC/O Swiftline Express\n1450 Crossroads Blvd\nEdison, NJ 08817",
     "billTo": "331 Meridian Sourcing Co. Inc.\nC/O Northstar Retail Group – Dept Ops\nPO Box 4021\nEdison, NJ 08837",
     "brand": "Nordpeak",
-    "status": "received",
+    "status": "confirmed",
     "totalCost": 447455.12,
     "lineItems": [
       {
@@ -206,6 +206,18 @@
         "toStatus": "received",
         "changedBy": "jmartinez",
         "changedAt": "2026-08-24T23:48:40.463Z"
+      },
+      {
+        "fromStatus": "received",
+        "toStatus": "pending",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:29.712Z"
+      },
+      {
+        "fromStatus": "pending",
+        "toStatus": "confirmed",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:39.847Z"
       }
     ]
   },
@@ -220,7 +232,7 @@
     "shipTo": "112 Distribution/Southeast\nC/O Atlantic Freight Services\n800 Harbor Blvd\nSavannah, GA 31401",
     "billTo": "112 BHF Merchandising LLC\nC/O Finance Dept\nPO Box 1812\nNew York, NY 10018",
     "brand": "UGG Home",
-    "status": "shipped",
+    "status": "pending",
     "totalCost": 312880,
     "lineItems": [
       {
@@ -287,6 +299,18 @@
         "toStatus": "shipped",
         "changedBy": "jmartinez",
         "changedAt": "2026-08-25T00:18:54.827Z"
+      },
+      {
+        "fromStatus": "shipped",
+        "toStatus": "received",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:32.048Z"
+      },
+      {
+        "fromStatus": "received",
+        "toStatus": "pending",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:37.813Z"
       }
     ]
   },
@@ -301,7 +325,7 @@
     "shipTo": "220 Distribution/Midwest\nC/O Heartland Logistics\n1200 Industrial Pkwy\nChicago, IL 60601",
     "billTo": "220 BHF Merchandising LLC\nC/O Finance Dept\nPO Box 1812\nNew York, NY 10018",
     "brand": "Pendleton Heritage",
-    "status": "pending",
+    "status": "confirmed",
     "totalCost": 198640,
     "lineItems": [
       {
@@ -356,6 +380,12 @@
         "toStatus": "pending",
         "changedBy": "jmartinez",
         "changedAt": "2026-08-24T21:47:24.406Z"
+      },
+      {
+        "fromStatus": "pending",
+        "toStatus": "confirmed",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:33.455Z"
       }
     ]
   },
@@ -370,7 +400,7 @@
     "shipTo": "450 Distribution/West\nC/O Pacific Cargo Partners\n300 Gateway Blvd\nLos Angeles, CA 90001",
     "billTo": "450 BHF Merchandising LLC\nC/O Finance Dept\nPO Box 1812\nNew York, NY 10018",
     "brand": "Laura Ashley",
-    "status": "received",
+    "status": "shipped",
     "totalCost": 89320,
     "lineItems": [
       {
@@ -431,6 +461,24 @@
         "toStatus": "received",
         "changedBy": "jmartinez",
         "changedAt": "2026-08-24T23:48:44.320Z"
+      },
+      {
+        "fromStatus": "received",
+        "toStatus": "pending",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:35.198Z"
+      },
+      {
+        "fromStatus": "pending",
+        "toStatus": "confirmed",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:46.538Z"
+      },
+      {
+        "fromStatus": "confirmed",
+        "toStatus": "shipped",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:47.847Z"
       }
     ]
   },
@@ -445,7 +493,7 @@
     "shipTo": "331 Distribution/Northeast\nC/O Swiftline Express\n1450 Crossroads Blvd\nEdison, NJ 08817",
     "billTo": "331 BHF Merchandising LLC\nC/O Finance Dept\nPO Box 1812\nNew York, NY 10018",
     "brand": "Casual Living",
-    "status": "pending",
+    "status": "received",
     "totalCost": 54760,
     "lineItems": [
       {
@@ -518,6 +566,24 @@
         "toStatus": "pending",
         "changedBy": "jmartinez",
         "changedAt": "2026-08-24T23:49:56.467Z"
+      },
+      {
+        "fromStatus": "pending",
+        "toStatus": "confirmed",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:43.647Z"
+      },
+      {
+        "fromStatus": "confirmed",
+        "toStatus": "shipped",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:50.468Z"
+      },
+      {
+        "fromStatus": "shipped",
+        "toStatus": "received",
+        "changedBy": "jmartinez",
+        "changedAt": "2026-08-25T06:15:52.342Z"
       }
     ]
   },
